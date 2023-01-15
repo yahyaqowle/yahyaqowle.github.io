@@ -1,9 +1,4 @@
 let names = [
-
-  
-]
-
-let names = [
     "a",
     "aa",
     "aa¹",
