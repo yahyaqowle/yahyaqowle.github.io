@@ -1,0 +1,44 @@
+/* CSS styles for the website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+  }
+  header h1 {
+    margin: 0;
+  }
+  nav {
+    background-color: #ddd;
+    padding: 0.5em;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  main {
+    padding: 1em;
+  }
+  section {
+    margin-bottom: 1em;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+  }
+  
