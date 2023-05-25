@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Qaamuus</title>
+  <style>
+    body{
+      background-color: #042E7B;
+      margin: 0px;
+      padding: 0px;
+    }
+    #table1{
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 500px;
+      margin-top: 30px;
+      margin-left: 50px;
+    }
+    #table1 td, th{
+      border: 1px solid black;
+      text-align: center;
+      padding: 3px;
+      font-size: 18px;
+    }
+    h1{
+      text-align: center;
+      background-color: #042E7B;
+      font-size: 45px;
+      color: white;
+      padding: 5px;
+    }
+    #div1{
+      background-color: #189EFF;
+      width: 900px;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    form{
+      text-align: center;
+    }
+    input[type=text]{
+      width: 300px;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    input[type=submit]{
+      font-size: 17px;
+      font-weight: bold;
+      background-color: #042E7B;
+      border: 1px solid #042E7B;
+      color: white;
+      padding: 5px;
+      width: 100px;
+      border-radius: 5px;
+    }
+    #table2{
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin: auto;
+      margin-top: 20px;
+      width: 900px;
+    }
+    #table2 td, th{
+      border: 1px solid black;
+      padding: 5px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    #pagination {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    #pagination .active{
+      background-color: #042E7B;
+      color: white;
+    }
+    #pagination a {
+      display: block;
+      padding: 5px 10px;
+      margin: 0 5px;
+      border: 1px solid black;
+      text-align: center;
+      text-decoration: none;
+    }
+    #pagination a:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Qaamuus</h1>
+  <div id="div1">
+    <form action="search.php" method="get">
+      <input type="text" name="search_word" placeholder="Search for a word...">
+      <input type="submit" value="Search">
+    </form>
+    <table id="table2">
+      <tr>
+        <th>Word</th>
+        <th>Meaning</th>
+      </tr>
+      <?php for ($i = 0; $i < 10; $i++): ?>
+        <tr>
+          <td>Word <?php echo $i; ?></td>
+          <td>Meaning <?php echo $i; ?></td>
+        </tr>
+      <?php endfor; ?>
+    </table>
+    <div id="pagination">
+      <a href="?page=1">&laquo; First</a>
+      <a href="?page=2">&lt; Previous</a>
+      <span class="active">1</span>
+      <a href="?page=2">2</a>
+      <a href="?page=3">3</a>
+      <a href="?page=4">4</a>
+      <a href="?page=5">5</a>
+      <a href="?page=6">6</a>
+      <a href="?page=7">7</a>
+      <a href="?page=8">8</a>
+      <a href="?page=9">9</a>
+      <a href="?page=10">10</a>
+      <a href="?page=2">Next &gt;</a>
+      <a href="?page=10">Last &raquo;</a>
+    </div>
+  </div>
+</body>
+</html>
